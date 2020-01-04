@@ -1,0 +1,67 @@
+Exception Name	Description
+INVALID_PATH
+
+File location is invalid.
+
+INVALID_MODE
+
+The open_mode parameter in FOPEN is invalid.
+
+INVALID_FILEHANDLE
+
+File handle is invalid.
+
+INVALID_OPERATION
+
+File could not be opened or operated on as requested.
+
+READ_ERROR
+
+Operating system error occurred during the read operation.
+
+WRITE_ERROR
+
+Operating system error occurred during the write operation.
+
+INTERNAL_ERROR
+
+Unspecified PL/SQL error
+
+CHARSETMISMATCH
+
+A file is opened using FOPEN_NCHAR, but later I/O operations use nonchar functions such as PUTF or GET_LINE.
+
+FILE_OPEN
+
+The requested operation failed because the file is open.
+
+INVALID_MAXLINESIZE
+
+The MAX_LINESIZE value for FOPEN() is invalid; it should be within the range 1 to 32767.
+
+INVALID_FILENAME
+
+The filename parameter is invalid.
+
+ACCESS_DENIED
+
+Permission to access to the file location is denied.
+
+INVALID_OFFSET
+
+Causes of the INVALID_OFFSET exception:
+
+ABSOLUTE_OFFSET = NULL and RELATIVE_OFFSET = NULL, or
+
+ABSOLUTE_OFFSET < 0, or
+
+Either offset caused a seek past the end of the file
+
+DELETE_FAILED
+
+The requested file delete operation failed.
+
+RENAME_FAILED
+
+The requested file rename operation failed.
+

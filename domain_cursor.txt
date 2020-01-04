@@ -1,0 +1,23 @@
+SQL>declare
+
+2 cursor p is select*from patient;
+
+3 v_t patient.tot_fee%type;
+
+4 begin
+
+5.for I in P loop
+
+6 v_t:=i.cons_charge+i.b_t_charge+i.x_ray_charge
+
+7 +i.o_t_charge;
+
+8 update patient set tot_fee=v_t where
+
+9 p_num=i.p_num;
+
+10 end loop;
+
+11 end;
+
+12 /
